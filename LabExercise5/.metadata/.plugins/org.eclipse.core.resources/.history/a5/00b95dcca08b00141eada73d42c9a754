@@ -1,0 +1,24 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+
+public class NameListTest {
+
+	public static void main(String[] args) {
+
+		ArrayList<Name> register = new ArrayList<Name>();	
+		
+//		Scanner sc = new Scanner(System.in);
+		
+		for (Name n : register) {
+			System.out.println(n.getFullName());
+			}
+		
+//		for(int i = 0; i< register(); i++) {
+//			System.out.println((i+1) + ":" + fruit.get(i).toUpperCase());
+//		}
+		
+		
+	}
+
+}

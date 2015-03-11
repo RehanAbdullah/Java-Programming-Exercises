@@ -1,0 +1,30 @@
+
+public class IsaAccountTest  {
+
+	public static void main(String[] args) {
+		
+		IsaAccount m = new IsaAccount();   //
+		System.out.println(m.toString());  //
+		
+		
+		
+		
+		
+		
+
+		//	public IsaAccount(int depositRemaining)
+
+
+		//			public void deposit(int amount)
+
+		//			public int getDepositRemaining(){
+
+		//	public void resetDepositRemaining()
+
+
+
+
+
+	}
+
+}

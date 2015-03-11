@@ -1,0 +1,15 @@
+
+public class OvertimeEmployee extends Employee {
+
+
+//	overtimeHours
+//	overtimeRate
+
+	
+	@Override
+	public int calculatePay() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+}

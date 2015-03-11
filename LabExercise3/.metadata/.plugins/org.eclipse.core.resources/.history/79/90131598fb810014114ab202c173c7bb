@@ -1,0 +1,37 @@
+
+public class ModuloCounter {
+
+	//	Fields
+	private int count;
+
+	//	Constructors
+	public ModuloCounter() {
+		setCount(0);
+	}
+
+	public ModuloCounter(int count) {
+		this.setCount(count);
+	}
+
+	//	Methods
+
+	public void setCount(int count) {
+		this.count = count;
+	}
+
+	public int getCount11() {
+		return count;
+	}
+
+
+	public String getCount() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public String getCount1() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

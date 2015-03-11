@@ -1,0 +1,26 @@
+
+public class FlexiEmployee extends Employee {
+
+
+	//	Field
+
+	private int flexiHours;
+
+	//	Constructor
+
+	public FlexiEmployee()
+	{
+		super();
+		flexiHours = 0;
+	}
+
+	@Override
+	public int calculatePay() {
+		return 0;
+	}
+
+}
+
+
+
+//((hoursWorked + flexiHours) * hourlyRate)

@@ -1,0 +1,26 @@
+public class Employee {
+
+
+	//	Fields
+
+	private int hoursWorked;
+	private int	hourlyRate;
+	private String fullname; 
+
+
+
+	//	Constructors
+
+
+
+
+	//	Methods
+
+	//  Abstract Method calculatePay()
+
+	//	get
+	//	set methods
+
+	// toString
+
+}

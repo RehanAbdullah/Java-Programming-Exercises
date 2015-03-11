@@ -1,0 +1,57 @@
+import java.util.ArrayList;
+//import java.util.Scanner;
+
+public class RegisterTest {
+
+	public static void main(String[] args) {
+		ArrayList<Name> register = new ArrayList<Name>();
+		//		Scanner sc = new Scanner(System.in);
+
+		Register reg = new Register();
+
+		reg.addName(new Name("Lionel", "Messi"));
+		reg.addName(new Name("Rehan", "Abdullah"));
+		reg.addName(new Name("Joel", "Blogger"));
+		reg.addName(new Name("Sid", "Blush"));
+		reg.addName(new Name("Josh", "Walsh"));
+		
+		register.forEach(n -> System.out.println(n.getName()));
+		
+		
+		System.out.println("The are " + reg.size() + " names in the list");
+		System.out.println("================================");
+
+		System.out.println(reg.getName(0));
+		System.out.println(reg.getName(1));
+		System.out.println(reg.getName(2));
+		System.out.println(reg.getName(3));
+		System.out.println(reg.getName(4));
+		
+		
+		//Declaring a string
+		String i = "Rehan";
+		
+		System.out.println("================================");
+
+
+		//A process that checks whether a name is in the list, and gives true or false
+		System.out.println("This is " + reg.searchRegisterByFirstName("Rehan") + ": Rehan exits in the register!");
+		System.out.println(reg.searchRegisterByFirstName("Joel"));
+		System.out.println(reg.searchRegisterByFirstName("Johnathan"));
+		
+		System.out.println("================================");
+		
+		//output some details
+//		System.out.println(reg.toString() + "\n");
+		
+		System.out.println("================================");
+
+		System.out.println(reg.countFamilyNameOccurrences('A'));
+
+		
+		System.out.println("Clear Entries");
+		reg.clearRegister();
+		System.out.println(reg.getName(0));
+		
+	}
+}

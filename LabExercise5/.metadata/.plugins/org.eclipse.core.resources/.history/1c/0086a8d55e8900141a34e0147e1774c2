@@ -1,0 +1,79 @@
+public class StringArrayTest {
+
+	public static void main(String[] args) {
+
+
+		String[] fruit = new String[6];
+
+		fruit[0] = "grape";
+		fruit[1] = "apple";
+		fruit[2] = "banana";
+		fruit[3] = "pear";
+		fruit[4] = "pineapple";
+		fruit[5] = "strawberry";
+
+		for (int i=0; i < fruit.length; i++)
+			System.out.println("fruit:" + fruit[1]);
+		
+		System.out.println("------------------------");	
+		
+		fruit[0] = fruit[0].toUpperCase();
+		System.out.println(fruit[0]);
+		
+		fruit[1] = fruit[1].toUpperCase();
+		System.out.println(fruit[1]);
+		
+		fruit[2] = fruit[2].toUpperCase();
+		System.out.println(fruit[2]);
+		
+		fruit[3] = fruit[3].toUpperCase();
+		System.out.println(fruit[3]);
+		
+		fruit[4] = fruit[4].toUpperCase();
+		System.out.println(fruit[4]);
+		
+		fruit[5] = fruit[5].toUpperCase();
+		System.out.println(fruit[5]);
+		
+		int largest = 0;
+		
+		for(int i = 0; fruit.length; i++) {
+			if (fruit[i].length > largest) {
+				largest = fruit[i].length;
+			}
+		}
+		
+		
+		//var fruits = ["Apple", "Banana", "Orange", "Pomegranate", "Peach"];
+		//var largest = 0;
+		//for (var i = 0; i < fruits.length; i++) {
+//		    if (fruits[i].length > largest) {
+//		        largest = fruits[i].length;
+//		    }
+		//}
+		//console.log(largest);
+
+		
+		
+		
+//		for (int i=0; i < fruit.length; i++) {
+//	System.out.println(fruit[0]);
+//	System.out.println(fruit[1]);
+//	System.out.println(fruit[2]);
+//	System.out.println(fruit[3]);
+//	System.out.println(fruit[4]);
+//	System.out.println(fruit[5]);
+//	System.out.println("---");	
+//		{
+
+		
+
+	}
+
+}
+
+
+
+
+
+

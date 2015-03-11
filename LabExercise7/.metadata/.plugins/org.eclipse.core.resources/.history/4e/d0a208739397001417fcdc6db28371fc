@@ -1,0 +1,82 @@
+import java.util.ArrayList;
+
+public class PlayerTest {
+
+
+	public static void main(String[] args) {
+		ArrayList<Player> name = new ArrayList<Player>();
+
+		Player b = new Player();
+		Player c = new Player();
+		Player d = new Player();
+		Player e = new Player();
+
+
+
+		
+
+		b.setFullPlayerName("Rehan Abdullah");
+		System.out.println(b.getName());
+		name.add(b);
+		
+		c.setFullPlayerName("Sachin Tendulkar");
+		System.out.println(c.getName());
+		name.add(c);
+
+		
+		d.setFullPlayerName("Brett Lee");
+		System.out.println(d.getName());
+		name.add(d);
+
+		
+		e.setFullPlayerName("Andrew Flintoff");
+		System.out.println(e.getName());
+		name.add(e);
+
+		
+		System.out.println("=============================================");
+
+
+		System.out.println("List of player names:");
+		for (int i=0;i < name.size(); i++) {
+			System.out.println(name.get(i).getName().getFullName());
+		}
+
+		System.out.println("=============================================");
+
+		name.add(new Player(new Name("Rehan","Abdullah"), new PairOfDice()));
+		name.add(new Player(new Name("Sachin","Tendulkar"), new PairOfDice()));
+		name.add(new Player(new Name("Brett","Lee"), new PairOfDice()));
+		name.add(new Player(new Name("Andrew","Flintoff"), new PairOfDice()));
+
+
+		name.forEach(n -> System.out.println(n.getName()));
+
+		System.out.println("=============================================");
+
+
+		for (Player p : name) {
+			p.rollDice();
+			System.out.println(p.getName() + " score: " + p.getDiceScore());
+		}
+
+		System.out.println("=============================================");
+
+
+		name.forEach(n -> System.out.println(n.getPairOfDice()));
+
+		System.out.println("=============================================");
+
+		System.out.println("The highest score is...  " +name.stream().mapToInt(n -> n.getDiceScore()).max());
+
+		System.out.println("=============================================");
+
+		//name.stream().mapToInt(n -> n.getDiceScore()).max();
+
+
+	}
+
+
+}
+
+

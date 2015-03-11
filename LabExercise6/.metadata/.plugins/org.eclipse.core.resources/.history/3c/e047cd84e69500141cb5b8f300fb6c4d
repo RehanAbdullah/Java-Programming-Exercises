@@ -1,0 +1,75 @@
+import java.util.ArrayList;
+
+public class Register {
+
+	//	Fields
+	private ArrayList<Name> namelist;
+
+	//	Constructors
+	public Register() {
+		namelist = new ArrayList<Name>();
+	}
+
+	//	Methods
+	public String toString() {
+		String familyName = null;
+		String firstName = null;
+		return "Register:[firstName=" + firstName + ", familyName=" + familyName + "]";
+	}
+	
+	public void addName(Name r) {
+		namelist.add(r);
+	}
+	
+	public void removeName(int i) {
+		namelist.remove(i);
+	}
+	
+	public void clearRegister() {
+		namelist.clear();
+	}
+	
+	public boolean isRegisterEmpty() {
+	    return namelist.isEmpty();
+	}
+	
+	public boolean searchRegisterByFirstName() {
+		for (Name i : namelist) {
+    		if (i.getFirstName().equals(i)) {
+    			
+    			
+//    			return true;
+//    		} else{
+    			return false;
+    		}
+    	}
+
+
+    	return namelist.stream().anyMatch(i -> i.getFirstName().equals(i));
+	  
+	
+	}
+	
+
+
+//	That accepts a char argument and returns an int defining the number
+//	of occurrences of a family name, starting with the provided character.
+	
+	public void countFamilyNameOccurrences() {
+		
+	}
+
+	
+
+}
+
+
+
+/*
+ *   if (namelist.contains("Rehan")) {
+	        return true;
+	    } else {
+	        return false;
+	    }
+*/
+

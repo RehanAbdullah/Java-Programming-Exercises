@@ -1,0 +1,70 @@
+
+public class Player {
+
+	//Fields
+	private Name name;
+	private PairOfDice dice;
+
+
+	//Constructors
+	public Player() {
+		name = new Name();
+		dice = new PairOfDice();
+	}
+	
+	public Player(Name name, PairOfDice dice) {
+		this.name = name;
+		this.dice = dice;
+		
+	}
+
+	//Methods
+	public Name setName(Name name) {
+		return this.name = name;
+	}
+
+	public Name getName() {
+		return name;
+	}
+	
+	public void getPlayer() {
+		return ;
+	}
+	
+
+	public PairOfDice getPairOfDice() {
+		return dice;
+	}
+
+	public void setPairOfDice(PairOfDice dice) {
+		this.dice  = dice;
+	}
+	
+	
+	public void rollDice() {
+		dice.roll();
+	}
+
+	public int getDiceScore() {
+		return dice.getScore();
+	}
+
+//	Add a void method setFullPlayerName(...) that accepts a single String argument (e.g. â€œJoe Bloggsâ€� 
+//	and then uses this to set the first and family name individually by extracting the relevant information 
+//	and then calling the respective setter methods of the Name class.
+	
+	public String PlayerName;
+
+	public void setFullPlayerName(String fullPlayerName) {
+		this.PlayerName = fullPlayerName;
+	}
+	
+	
+	
+	public String toString() {
+		return "Player: [name =" + name + ", Player Dice=" + dice + "]";
+	}
+
+
+
+}

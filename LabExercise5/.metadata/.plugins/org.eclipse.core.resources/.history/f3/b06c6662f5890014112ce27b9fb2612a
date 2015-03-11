@@ -1,0 +1,31 @@
+import java.util.ArrayList;
+
+
+public class StringListTest {
+
+	public static void main(String[] args) {
+
+		ArrayList<String> fruit = new ArrayList<String>();
+		
+		fruit.add("Apple");
+		fruit.add("Pear");
+		fruit.add("Orange");
+		fruit.add("Banana");
+		fruit.add("Strawberry");
+		fruit.add("Grape");
+		
+		System.out.println(fruit.toString());
+		
+		fruit.set(0, "Apple");
+		fruit.set(1, "Pear");
+		
+		System.out.println(fruit.toString());
+
+		fruit.remove(1);
+		fruit.remove(fruit.size()-2);
+		
+		System.out.println(fruit.toString() +"\n");
+		
+	}
+
+}

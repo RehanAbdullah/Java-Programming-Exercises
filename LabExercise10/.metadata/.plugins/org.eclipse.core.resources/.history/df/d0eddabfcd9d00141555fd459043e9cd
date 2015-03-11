@@ -1,0 +1,35 @@
+public class Employee {
+
+
+	//	Fields
+
+	private int hoursWorked;
+	private int	hourlyRate;
+	private String fullName; 
+
+
+
+	//	Constructors
+
+
+
+
+	//	Methods
+
+	//  Abstract Method calculatePay()
+
+	//	get methods
+	public String getfullName() {
+		return fullName;
+	}
+	
+	
+	//	set methods
+
+	// toString
+	public String toString() {
+		return
+		
+	}
+
+}

@@ -1,0 +1,39 @@
+import java.util.ArrayList;
+//import java.util.Scanner;
+
+public class RegisterTest {
+
+	public static void main(String[] args) {
+				ArrayList<Name> register = new ArrayList<Name>();
+		//		Scanner sc = new Scanner(System.in);
+
+		Register reg = new Register();
+
+		reg.addName(new Name("Lionel", "Messi"));
+		reg.addName(new Name("Rehan", "Abdullah"));
+		reg.addName(new Name("Joel", "Blogger"));
+		reg.addName(new Name("John", "Bloody"));
+		reg.addName(new Name("Josh", "Blood"));
+
+		String i = "Rehan";
+		
+
+		System.out.println(reg.searchRegisterByFirstName("Rehan"));
+		System.out.println(reg.searchRegisterByFirstName(i));
+		System.out.println(reg.searchRegisterByFirstName("Joel"));
+
+
+		 //output some details
+        System.out.println(reg.toString() + "\n");
+
+        
+        
+        
+       System.out.println(reg.countFamilyNameOccurrences('R'));
+
+
+
+
+	}
+}
+

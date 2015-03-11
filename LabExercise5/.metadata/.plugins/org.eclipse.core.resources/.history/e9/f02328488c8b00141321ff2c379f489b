@@ -1,0 +1,14 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+
+public class NameListTest {
+
+	public static void main(String[] args) {
+
+		ArrayList<Name> register = new ArrayList<Name>();	
+		
+		
+	}
+
+}

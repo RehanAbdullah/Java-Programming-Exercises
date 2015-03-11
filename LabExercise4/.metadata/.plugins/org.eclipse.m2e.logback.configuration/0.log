@@ -1,0 +1,9 @@
+2014-11-28 14:51:57,616 [main] INFO  o.a.c.i.c.DefaultTypeConverter - Loaded 182 type converters
+2014-11-28 14:51:57,761 [main] INFO  o.a.camel.impl.DefaultCamelContext - Apache Camel 2.10.2 (CamelContext: camel-1) is starting
+2014-11-28 14:51:58,271 [main] INFO  o.a.c.m.ManagementStrategyFactory - JMX enabled.
+2014-11-28 14:51:58,465 [main] INFO  o.a.c.m.DefaultManagementLifecycleStrategy - StatisticsLevel at All so enabling load performance statistics
+2014-11-28 14:51:58,500 [main] INFO  o.a.camel.impl.DefaultCamelContext - Total 0 routes, of which 0 is started.
+2014-11-28 14:51:58,501 [main] INFO  o.a.camel.impl.DefaultCamelContext - Apache Camel 2.10.2 (CamelContext: camel-1) started in 0.740 seconds
+2014-11-28 14:56:48,952 [main] INFO  o.a.camel.impl.DefaultCamelContext - Apache Camel 2.10.2 (CamelContext: camel-1) is shutting down
+2014-11-28 14:56:48,990 [main] INFO  o.a.c.i.c.DefaultTypeConverter - TypeConverterRegistry utilization[attempts=0, hits=0, misses=0, failures=0] mappings[total=189, misses=0]
+2014-11-28 14:56:48,991 [main] INFO  o.a.camel.impl.DefaultCamelContext - Apache Camel 2.10.2 (CamelContext: camel-1) is shutdown in 0.039 seconds. Uptime 4 minutes.

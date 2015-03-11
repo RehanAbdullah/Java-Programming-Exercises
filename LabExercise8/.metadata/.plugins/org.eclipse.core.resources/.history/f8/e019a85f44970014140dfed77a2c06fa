@@ -1,0 +1,31 @@
+
+public class IsaAccount extends InterestAccount {
+	
+	//fields
+	private int depositRemaining;
+	
+	//constructors
+
+	public IsaAccount(){
+		super();
+		depositRemaining = 5000;
+	}
+	
+	public IsaAccount(int depositRemaining){
+		super();
+		this.depositRemaining = depositRemaining;
+	}
+	
+	//methods
+	
+	@Override
+	public void deposit(int amount)
+	{
+		while((depositRemaining - amount) >= 0 )
+		{
+			
+		}
+	}
+	
+
+}

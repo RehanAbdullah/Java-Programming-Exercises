@@ -1,0 +1,113 @@
+import org.w3c.dom.css.Counter;
+
+
+public class ModuloCounter {
+
+	//	Fields
+	private int count;
+	private Object Counter;
+   
+		
+	//	Constructors
+	public ModuloCounter() {
+		setCount(0);
+	}
+
+	public ModuloCounter(int count) {
+		this.setCount(count);
+	}
+
+	//	Methods
+
+	public void setCount(int count) {
+		this.count = count;
+	}
+
+	public int getCount11() {
+		return count;
+	}
+
+	public String getCount() {
+		return null;
+	}
+
+	public static boolean isEven(int value) {
+	    return (value & 1) == 0;
+	  }
+	
+	public static boolean isEven(ModuloCounter m) {
+      return isModuloCount(m.Counter);
+    }
+
+	private static boolean isModuloCount(Object counter2) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	
+	
+}
+
+
+
+
+
+
+
+//
+////Consider this as a pointer, and then you might want to look at [this question](http://stackoverflow.com/questions/9846779/testing-for-prime-numbers-in-java).
+//    
+//    public class MyInteger {
+//      private int value;
+//  
+//      public MyInteger(int value) {
+//        super();
+//        this.value = value;
+//      }
+//
+//      public static boolean isPrime(int value) {
+//        // I would increment counter then test if the result of value modulo counter 
+//        // (that is if value % counter != 0) until counter >= square_root(value). 
+//        // Then the value is prime, otherwise 
+//        return false;
+//      }
+//
+//      public static boolean isEven(int value) {
+//        return (value & 1) == 0;
+//      }
+//
+//      public static boolean isEven(MyInteger m) {
+//        return isEven(m.value);
+//      }
+//
+//      public static boolean isPrime(MyInteger m) {
+//        return isPrime(m.value);
+//      }
+//
+//      public static boolean isOdd(int value) {
+//        return !isEven(value);
+//      }
+//
+//      public static boolean isOdd(MyInteger m) {
+//        return isOdd(m.value);
+//      }
+//
+//      public boolean isEven() {
+//        return isEven(this.value);
+//      }
+//
+//      public boolean isOdd() {
+//        return isOdd(this.value);
+//      }
+//
+//      public boolean isPrime() {
+//        return isPrime(value);
+//      }
+//
+//      public int getValue() {
+//        return value;
+//      }
+//
+//      public void setValue(int value) {
+//        this.value = value;
+//      }
+//    }

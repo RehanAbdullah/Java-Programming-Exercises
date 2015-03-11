@@ -1,0 +1,87 @@
+import java.util.ArrayList;
+
+public class Register {
+
+	//	Fields
+	private ArrayList<Name> namelist; //collection of names
+	private String familyName;
+	private String firstName;
+
+	//	Constructors
+	/** Create an empty Register with no title. */
+	public Register() {
+		namelist = new ArrayList<Name>();
+	}
+
+	//	Methods
+	
+	//names can be added
+	public void addName(Name r) {
+		namelist.add(r);
+	}
+
+	//names can be removed
+	public void removeName(int i) {
+		namelist.remove(i);
+	}
+	//The register can be cleared
+	public void clearRegister() {
+		namelist.clear();
+	}
+	//check if it the register is empty
+	public boolean isRegisterEmpty() {
+		return namelist.isEmpty();
+	}
+	
+	public Name getName(int i) {
+		Name s = null;
+		if (0 <= i && i < namelist.size()) {
+			s = namelist.get(i);
+		} else {
+			s = null;
+		}
+		return s;
+		
+	}
+	
+	// This will check the size
+	public int size() {
+		return namelist.size();
+	}
+	
+	// A toString() method should print the contents of the register
+	public String toString() {
+		return "Register:[firstName=" + firstName + ", familyName=" + familyName + "]";
+	}
+	
+
+	/**	That accepts a String argument and returns true or false depending on 
+		whether a name exists with that respective first name. */
+	public boolean searchRegisterByFirstName(String first) {
+		//    	using for-each loop
+		boolean exists = false;
+		for (Name i  : namelist) {
+			if (i.getFirstName().equals(first)) {    			
+				exists = true;
+			}
+		}
+		return exists;
+	}
+
+	/**	That accepts a char argument and returns an int defining the number
+		of occurrences of a family name, starting with the provided character. */
+	public int countFamilyNameOccurrences(char c) {
+		//using for-each loop
+		int count = 0;
+		int i = 0;
+		for(Name s: namelist) {
+			if(s.getFamilyName().charAt(i)==c) {
+				count++;
+			}
+		}
+		return count;
+	}
+
+
+}
+

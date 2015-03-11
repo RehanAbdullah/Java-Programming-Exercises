@@ -1,0 +1,68 @@
+import java.util.ArrayList;
+//import java.util.Scanner;
+
+public class RegisterTest {
+
+	public static void main(String[] args) {
+		ArrayList<Name> register = new ArrayList<Name>();
+		//		Scanner sc = new Scanner(System.in);
+
+		Register reg = new Register();
+
+		reg.addName(new Name("Lionel", "Messi"));
+		reg.addName(new Name("Rehan", "Abdullah"));
+		reg.addName(new Name("Tupac", "Shakur"));
+		reg.addName(new Name("Biggie", "Smalls"));
+		reg.addName(new Name("Sachin", "Tendulkar"));
+		
+//		 register.forEach(n -> System.out.println(n.getName()));
+		
+		
+//		System.out.println("All the name...\n" + reg.toString() + "\n");
+		
+		System.out.println("List of the names in the Register!");
+		System.out.println("================================");
+		for (int i =0; i < reg.size(); i++) {
+			System.out.println(reg.getName(i).getFullName());
+		}
+		
+	
+		
+		System.out.println("The are " + reg.size() + " names in the list" + "\n");
+		System.out.println("================================");
+
+		System.out.println(reg.getName(0));
+		System.out.println(reg.getName(1));
+		System.out.println(reg.getName(2));
+		System.out.println(reg.getName(3));
+		System.out.println(reg.getName(4));
+		
+		
+		//Declaring a string
+		String i = "Rehan";
+		
+		System.out.println("================================");
+
+
+		//A process that checks whether a name is in the list, and gives true or false
+		System.out.println("This is " + reg.searchRegisterByFirstName("Rehan") + ": Rehan exits in the register!");
+		System.out.println("This is " + reg.searchRegisterByFirstName("Joel") + ":Joel does not exist in the register!");
+		System.out.println("This is " + reg.searchRegisterByFirstName("Johnathan") + ": Johnathan does not exist in the register!");
+		
+		System.out.println("================================");
+		
+		//output some details
+//		System.out.println(reg.toString() + "\n");
+		
+
+		System.out.println("There is " + reg.countFamilyNameOccurrences('A') + " FamilyName that begins with character A ");
+
+		System.out.println("================================");
+
+		System.out.println("Clear Entries");
+		reg.clearRegister();
+		System.out.println(reg.getName(0));
+		System.out.println(reg.getName(1));
+		
+	}
+}

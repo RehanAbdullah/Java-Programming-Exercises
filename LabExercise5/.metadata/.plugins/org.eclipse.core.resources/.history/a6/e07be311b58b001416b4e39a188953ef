@@ -1,0 +1,32 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+
+public class NameListTest {
+
+	public static void main(String[] args) {
+
+		ArrayList<Name> register = new ArrayList<Name>();	
+		
+	Scanner sc = new Scanner(System.in);
+		
+		for (Name n : register) {
+			System.out.println(n.getFullName());
+			}
+		
+
+		for (int i = 0; i < 4; i++) {
+
+		    System.out.println("input a first name");
+		    String fName = sc.next();
+		   System.out.println("input last name");
+		    String lName = sc.next();
+
+		   register.add(new Name(fName, lName));
+
+		}
+		
+		
+		
+	}
+}

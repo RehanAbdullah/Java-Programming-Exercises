@@ -1,0 +1,81 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+
+public class NameListTest {
+
+	public static void main(String[] args) {
+
+		ArrayList<Name> register = new ArrayList<Name>();	
+		
+		Name[] friends = new Name[4];
+		
+		//create Name object and assign reference into array
+		friends[0] = new Name("Joe", "Bloggs");
+		friends[1] = new Name("Fred", "Perry");
+		friends[2] = new Name("Diti", "Hammond");
+		friends[3] = new Name("Bulsar", "Raymond");
+		
+		for(int i = 0; i < friends.length; i++) {
+			//use accessor method to output first name of each
+			System.out.println(friends[i].getFirstName());
+		}
+		
+//		Scanner in = new Scanner(System.in);
+		
+//		String s;
+//		
+//		String name;
+//		
+//		for(int i=0; i< ((String) name).length(); i++)
+//		System.out.println("Enter a name");
+//	      name = int.nextLine();
+//	      System.out.println("You entered string "+in);
+//	      
+//	      
+//	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+
+		//		
+		//		Name[] friends = new Name[4];
+		//		
+		//		friends[0] = new Name("Rehan","Abdullah");
+		//		friends[1] = new Name("Fred", "Perry");
+		//		friends[2] = new Name("Diti", "Hammond");
+		//		friends[3] = new Name("Bulsar", "Raymond");
+		//		
+		//		for(int i = 0 ; i < 4; i++);  
+		//        {
+		//            System.out.println("Enter a value") ;
+		//            int register1 = friends.length;
+		//        }
+		//		
+		//		
+		//		
+		//		
+		//		
+		//		
+		//		for(int i = 0; i < friends1.length; i++) {
+		//			System.out.println(friends1[i].getFirstName());
+		//		}
+		//		
+		//		
+
+		//		Name[] friends1 = new name[3];
+		//		for (int i=0; i<3; i++); {
+		//		     System.out.println("Enter another ");
+		//		      name friends1[i] = Name.nextInt();
+		//		}
+		//		
+		//		
+		//		
+	}
+
+}

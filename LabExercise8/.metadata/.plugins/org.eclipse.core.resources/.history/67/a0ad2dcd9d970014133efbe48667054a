@@ -1,0 +1,23 @@
+
+public class IsaAccountTest  {
+
+	public static void main(String[] args) {
+		
+		IsaAccount m = new IsaAccount();   // test default constructor
+		System.out.println(m.toString());  // test to toString
+		
+		IsaAccount s = new IsaAccount(100, 10, 10, 1000); // test default constructor
+		System.out.println(s.toString());
+		System.out.println();
+		
+		
+		
+		
+
+
+
+
+
+	}
+
+}

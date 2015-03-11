@@ -1,0 +1,64 @@
+
+public class Player {
+
+	//Fields
+	private Name playerName;
+	private PairOfDice ddice;
+
+
+	//Constructors
+	public Player() {
+		playerName = new Name();
+		ddice = new PairOfDice();
+	}
+	
+	public Player(Name playerName, PairOfDice ddice) {
+		this.playerName = playerName;
+		this.ddice = ddice;
+		
+	}
+
+	//Methods
+	public Name setName(Name playerName) {
+		return this.playerName = playerName;
+	}
+
+	public Name getName() {
+		return playerName;
+	}
+		
+	public void setFullPlayerName(String fullPlayerName) {
+		String[]hello = fullPlayerName.split("");
+		playerName.setFirstName(hello[0]);
+		playerName.setFamilyName(hello[1]);
+	}
+	
+//	public void getPlayer() { 
+//		return ;
+//	}
+//	
+
+	public PairOfDice getPairOfDice() {
+		return ddice;
+	}
+
+	public void setPairOfDice(PairOfDice dice) {
+		this.ddice  = ddice;
+	}
+	
+	
+	public void rollDice() {
+		ddice.roll();
+	}
+
+	public int getDiceScore() {
+		return ddice.getScore();
+	}
+
+	public String toString() {
+		return "Player:[playerName = " + playerName + ", ddice=" + ddice + "]";
+	}
+
+
+
+}

@@ -1,0 +1,77 @@
+import java.util.ArrayList;
+
+
+
+public class Player {
+
+	//Fields
+	private ArrayList<Name> namelist;
+	private Name name;
+	private PairOfDice dice;
+
+
+	//Constructors
+	public Player() {
+		name = new Name();
+		dice = new PairOfDice();
+	}
+	
+	public Player(Name name, PairOfDice dice) {
+		this.name = name;
+		this.dice = dice;
+		
+	}
+
+	//Methods
+	public Name setName(Name name) {
+		return this.name = name;
+	}
+
+	public Name getName() {
+		return name;
+	}
+	
+	public int size() {
+		return namelist.size();
+	}
+		
+/**Add a void method setFullPlayerName(...) that accepts a single String argument (e.g. “Joe Bloggs” 
+	and then uses this to set the first and family name individually by extracting the relevant 
+	information and then calling the respective setter methods of the Name class. */
+	public void setFullPlayerName(String fullPlayerName) {
+		String[]hello = fullPlayerName.split(" ");
+		name.setFirstName(hello[0]);
+		name.setFamilyName(hello[1]);
+	}
+	
+	public void getPlayer() { 
+		return ;
+	}
+	
+
+	public PairOfDice getPairOfDice() {
+		return dice;
+	}
+
+	public void setPairOfDice(PairOfDice dice) {
+		this.dice  = dice;
+	}
+	
+	
+	public void rollDice() {
+		dice.roll();
+	}
+
+	public int getDiceScore() {
+		return dice.getScore();
+	}
+
+
+	// A toString method
+	public String toString() {
+		return "Player:[name = " + name + ", dice=" + dice + "]";
+	}
+
+
+
+}

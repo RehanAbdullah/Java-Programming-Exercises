@@ -1,0 +1,50 @@
+
+public class IsaAccountTest {
+
+	public static void main(String[] args) {
+
+		IsaAccount m = new IsaAccount();   // test default constructor
+		System.out.println(m.toString());  // test to toString
+
+		IsaAccount s = new IsaAccount(100, 10, 10, 1000); // test default constructor
+		System.out.println(s.toString());
+		System.out.println();
+
+		s.resetDepositRemaining();
+		//System.out.println(s.toString());
+		System.out.println("test depositRemaining Reset");
+		System.out.println(s.resetDepositRemaining());
+		System.out.println("should reset to 5000\n");
+
+		System.out.println("Test get balance");
+		System.out.println(s.getBalance());
+		System.out.println("Display balance");
+
+		System.out.println("test withdraw");
+		s.withdraw(10);
+		System.out.println(s.getBalance());
+		System.out.println("Balance should have reduced by 10");
+		
+		
+		System.out.println("Test get minimum balance");
+		System.out.println(s.getMinimumBalance());
+		System.out.println("Should display minimum balance");
+		
+		System.out.println("Now test that the deposit remaining actually works");
+		s.deposit(4000);
+		System.out.println(s.getDepositRemaining()+ "\t\tdeposited 4000, 1000 left");
+
+
+
+
+
+
+
+
+
+
+
+
+	}
+
+}

@@ -1,0 +1,26 @@
+import java.util.ArrayList; 
+
+public class NameListTest {
+
+	public static void main(String[] args) {
+
+		ArrayList<Name> friends = new ArrayList<Name>();
+		
+		Name[] friends1 = new Name[4];
+		
+		friends1[0] = new Name("Rehan","Abdullah");
+		friends1[1] = new Name("Fred", "Perry");
+		friends1[2] = new Name("Diti", "Hammond");
+		friends1[3] = new Name("Bulsar", "Raymond");
+		
+		
+		for(int i = 0; i < friends1.length; i++) {
+			System.out.println(friends1[i].getFirstName());
+		}
+		
+		
+		
+		
+	}
+
+}

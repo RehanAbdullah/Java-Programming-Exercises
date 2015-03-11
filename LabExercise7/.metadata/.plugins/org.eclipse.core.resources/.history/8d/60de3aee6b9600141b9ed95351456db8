@@ -1,0 +1,40 @@
+import java.util.ArrayList;
+
+
+public class PlayerTest {
+
+	public static void main(String[] args) {
+		ArrayList<Player> name = new ArrayList<Player>();
+		
+		Player n = new Player();
+		System.out.println(n.toString() + "\n");
+		
+	  name.setName(new Name("Rehan","Abdullah"));
+
+		name.add(new Player(new Name("Rehan","Abdullah"), new PairOfDice()));
+		name.add(new Player(new Name("Frank","Lampard"), new PairOfDice()));
+		name.add(new Player(new Name("Lionel","Messi"), new PairOfDice()));
+		name.add(new Player(new Name("Sergio","Aguero"), new PairOfDice()));
+		
+		System.out.println("List of player names:");
+		for (int i=0;i < name.size(); i++) {
+			System.out.println(name.get(i).getName().getFullName());
+		}
+		
+
+
+		for (Player p : name) {
+			p.rollDice();
+			System.out.println(p.getName() + " score: " + p.getDiceScore());
+		}
+		
+		 name.add(new Player(new Name("Rehan","Abdullah"), new PairOfDice()));
+		
+	//	name.forEach(n -> System.out.println(n.getName()));
+	}
+
+
+}
+		
+		
+		

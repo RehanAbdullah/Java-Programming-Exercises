@@ -1,0 +1,58 @@
+/**
+ * A name has a first name and a family name.
+ * There is an option to produce a full name by combining these.
+ * 
+ * @author Luke
+ */
+public class Name {
+
+	//Fields
+	private String title;
+	private String artist;
+	private int duration;
+
+	//Constructors
+	public Name() {
+		title = "";
+		artist = "";
+		setDuration("");
+	}
+	
+	public Name(String title, String artist) {
+		this.title = title;
+		this.artist = artist;
+	}
+	
+	//Methods
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public void setArtist(String artist) {
+		this.artist = artist;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public String getArtist() {
+		return artist;
+	}
+
+	public String getAlbum() {
+		return title + " " + artist;
+	}
+
+	public String toString() {
+		return "Album:[title=" + title + ", artist=" + artist + "]";
+	}
+
+	public String getDuration() {
+		return duration;
+	}
+
+	public void setDuration(String duration) {
+		this.duration = duration;
+	}
+}
